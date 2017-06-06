@@ -1,0 +1,5 @@
+sudo -i
+cd /
+cd /root/git/dockerDemo
+docker build -t hello-world /root/git/dockerDemo
+docker run --it --name helloworld -p 80:80 -v /root/git/dockerDemo/src:/var/www/html hello-world
